@@ -1,0 +1,21 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header-div
+{
+    width: 70%;
+    background-color: black;
+    margin-left: 250px;
+    text-align: center;
+   
+    color: #EEC0C6 ;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.playList
+{
+   
+    background-color: white;
+    height: 50vh;
+   
+    width: 80%;
+    margin-left: 180px;
+    margin-top: 20px ;
+    overflow: scroll;
+
+}
+
+
+.album
+{
+    width: 80%;
+    margin-left: 180px;
+    margin-top: 50px ;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.album img{
+  width: 200px;
+  height: 50%;
+}
+
+.listContainer
+{
+  background-image: linear-gradient(#7EE8FA, #EEC0C6);
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+ justify-content: flex-start;
+ padding: 10px;
+}
+
+
+.selected
+{
+  background-image: linear-gradient(#6ddbeecb, #eec0c623);
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 55px;
+  width: 102%;
+  align-items: center;
+  cursor: pointer;
+ justify-content: flex-start;
+ padding: 10px;
+}
+
+.listContainer .div2
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  
+  
+}
+
+.listContainer .div3
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  
+  
+}
+

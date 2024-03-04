@@ -1,0 +1,123 @@
+
+    
+    
+    @media only screen 
+    and (min-device-width : 220px)
+    and (max-device-width : 912px)
+    
+    {
+        /* .hero-div
+    {
+       
+        margin-top: -200px;
+        margin-left: -170px;
+
+      
+       
+    } */
+    
+    .hero
+    {
+        width: 100%;
+        border-radius: 100%;
+        border:  10px;
+        border-color: black;
+        /* margin-top: -100px;
+        margin-left: -100px; */
+     
+    }
+    
+    .hero-clip
+    {
+          mix-blend-mode: darken;
+          width: 100%;
+          position: absolute;
+            z-index: 1000;
+          margin-left: -10px;
+          
+    }
+    
+    
+    .hero-clip2
+    {
+          mix-blend-mode: darken;
+          width: 200px;
+          position: absolute;
+    
+          margin-left: 100px;
+    }
+    
+    
+    
+    .hero-card{
+        display: flex !important;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+       
+        
+        
+    }
+    
+    
+    
+    
+    .trickery
+    {
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       align-content: center;
+       padding-top: 12rem;
+    }
+    
+    
+    .hero-text
+    {
+       width: 100%;
+        background-image: linear-gradient( black, rgb(172, 26, 26));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+     
+    
+        
+       
+        
+    
+    
+    }
+    
+    
+    .hero-text h1
+    {   
+
+        
+        font-size: 3rem !important;
+        text-align: center;
+    }
+    
+    
+    .hero-button
+    {
+        width: 100px;
+        color: black;
+       
+        background-image: linear-gradient( black, rgb(172, 26, 26));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-color: red;
+        border-radius: 100px;
+        border-color: black;
+        height: 50px;
+      
+    }
+    }

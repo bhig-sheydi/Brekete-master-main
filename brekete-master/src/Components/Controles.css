@@ -1,0 +1,59 @@
+*{
+   padding: 0; 
+   margin: 0;
+   box-sizing: border-box;
+}
+
+
+.controle-div
+{
+    background-color: pink;
+    width: 95%;
+    height: 70px;
+   position: fixed;
+   top: 90%;
+   left: 6.5%;
+   border-radius: 10px;
+   color: black;
+   display: flex;
+   align-items: center;
+ 
+}
+
+
+
+
+
+.controle-div .musicControles
+{
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   margin-left: 300px;
+   cursor: pointer;
+
+}
+
+
+.hide{
+   display: none;
+}
+
+progress
+{
+   width: 100%;
+   position: absolute;
+   top: -5px;
+   left: 5px;
+}
+
+
+.progressBar{
+   margin-left: 100px;
+}
+
+
+
+audio{
+   position: absolute;
+}
