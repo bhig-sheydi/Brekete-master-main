@@ -1,4 +1,89 @@
 
+
+
+    .hero-div                                                             
+    {
+       
+        margin-top: 50px;
+        /* margin-left: 50px; */
+       
+    }
+    
+    .hero
+    {
+        width: 100%;
+        border-radius: 100%;
+        border:  10px;
+        border-color: black;
+        margin-top: -100px;
+        margin-left: -100px;
+     
+    }
+    
+    .hero-clip
+    {
+          mix-blend-mode: darken;
+          width: 50%;
+          position: absolute;
+    
+          margin-left: -100px;
+    }
+    
+    
+    .hero-clip2
+    {
+          mix-blend-mode: darken;
+          width: 30%;
+          position: absolute;
+    
+          margin-left: 100px;
+    } 
+    
+    .hero-card
+    {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding-top: 200px;
+    }
+    
+    
+    
+    
+    
+    
+    .trickery
+    {
+        padding-top: -100px;
+        padding-left: 150px;
+    } 
+    
+    
+    .hero-text
+    {
+        font-size: 80px;
+        background-image: linear-gradient( black, rgb(172, 26, 26));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    
+    }
+    
+    
+     .hero-button
+    {
+        width: 100px;
+        color: black;
+        margin-left: 40%;
+        background-image: linear-gradient( black, rgb(172, 26, 26));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-color: red;
+        border-radius: 100px;
+        border-color: black;
+        height: 50px;
+      
+    } 
+     
     
     
     @media only screen 
