@@ -1,4 +1,94 @@
 
+
+
+.hero-div                                                             
+{
+   
+    margin-top: 50px !important;
+    /* margin-left: 50px; */
+   
+}
+
+.hero
+{
+    width: 100%  !important;
+    border-radius: 100%  !important;
+    border:  10px  !important;
+    border-color: black  !important;
+    margin-top: -100px  !important;
+    margin-left: -100px !important;
+ 
+}
+
+.hero-clip
+{
+      mix-blend-mode: darken  !important;
+      width: 50%  !important;
+      position: absolute  !important;
+
+      margin-left: -100px  !important;
+}
+
+
+.hero-clip2
+{
+      mix-blend-mode: darken  !important;
+      width: 30% !important; 
+      position: absolute  !important;
+
+      margin-left: 100px  !important;
+} 
+
+.hero-card
+{
+   display: grid !important;
+   grid-template-columns: 1fr 1fr !important;
+    align-items: center !important;
+    padding-top: 200px !important;
+}
+
+
+
+
+
+
+.trickery
+{
+    padding-top: -100px !important;
+    padding-left: 150px!important;
+} 
+
+
+.hero-text
+{
+    font-size: 80px!important;
+    background-image: linear-gradient( black, rgb(172, 26, 26)) !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text!important;
+
+}
+
+
+ .hero-button
+{
+    width: 100px!important;
+    color: black!important;
+    margin-left: 40% !important;
+    background-image: linear-gradient( black, rgb(172, 26, 26)) !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+    background-color: red !important;
+    border-radius: 100px !important;
+    border-color: black !important;
+    height: 50px !important;
+  
+} 
+ 
+
+
+
+
+
 @media only screen 
 and (min-device-width : 1024px)
 and (max-device-width : 1280px)
@@ -8,47 +98,47 @@ and (max-device-width : 1280px)
     .hero-div                                                             
     {
        
-        margin-top: 50px;
+        margin-top: 50px !important;
         /* margin-left: 50px; */
        
     }
     
     .hero
     {
-        width: 100%;
-        border-radius: 100%;
-        border:  10px;
-        border-color: black;
-        margin-top: -100px;
-        margin-left: -100px;
+        width: 100%  !important;
+        border-radius: 100%  !important;
+        border:  10px  !important;
+        border-color: black  !important;
+        margin-top: -100px  !important;
+        margin-left: -100px !important;
      
     }
     
     .hero-clip
     {
-          mix-blend-mode: darken;
-          width: 50%;
-          position: absolute;
+          mix-blend-mode: darken  !important;
+          width: 50%  !important;
+          position: absolute  !important;
     
-          margin-left: -100px;
+          margin-left: -100px  !important;
     }
     
     
     .hero-clip2
     {
-          mix-blend-mode: darken;
-          width: 30%;
-          position: absolute;
+          mix-blend-mode: darken  !important;
+          width: 30% !important; 
+          position: absolute  !important;
     
-          margin-left: 100px;
+          margin-left: 100px  !important;
     } 
     
     .hero-card
     {
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-        align-items: center;
-        padding-top: 200px;
+       display: grid !important;
+       grid-template-columns: 1fr 1fr !important;
+        align-items: center !important;
+        padding-top: 200px !important;
     }
     
     
@@ -58,33 +148,33 @@ and (max-device-width : 1280px)
     
     .trickery
     {
-        padding-top: -100px;
-        padding-left: 150px;
+        padding-top: -100px !important;
+        padding-left: 150px!important;
     } 
     
     
     .hero-text
     {
-        font-size: 80px;
-        background-image: linear-gradient( black, rgb(172, 26, 26));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+        font-size: 80px!important;
+        background-image: linear-gradient( black, rgb(172, 26, 26)) !important;
+        -webkit-text-fill-color: transparent !important;
+        -webkit-background-clip: text!important;
     
     }
     
     
      .hero-button
     {
-        width: 100px;
-        color: black;
-        margin-left: 40%;
-        background-image: linear-gradient( black, rgb(172, 26, 26));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-color: red;
-        border-radius: 100px;
-        border-color: black;
-        height: 50px;
+        width: 100px!important;
+        color: black!important;
+        margin-left: 40% !important;
+        background-image: linear-gradient( black, rgb(172, 26, 26)) !important;
+        -webkit-text-fill-color: transparent !important;
+        -webkit-background-clip: text !important;
+        background-color: red !important;
+        border-radius: 100px !important;
+        border-color: black !important;
+        height: 50px !important;
       
     } 
      }
