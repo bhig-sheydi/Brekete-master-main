@@ -238,7 +238,7 @@
     
     .hero-text
     {
-       width: 100%;
+       width: 130%;
         background-image: linear-gradient( black, rgb(172, 26, 26));
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -250,8 +250,8 @@
         align-content: center;
         position: relative;
         top: -50px;
-        right: 50px;
-        zindex: 70px;
+        right: 40px;
+        z-index: -70;
      
         
      
@@ -270,7 +270,7 @@
     {   
 
         
-        font-size: 3rem !important;
+        font-size: 70% !important;
         text-align: center;
     }
     
