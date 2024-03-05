@@ -152,7 +152,7 @@ and (max-device-width : 812px)
         justify-content: center;
 
         width: 100%   !important;
-         height:50vh    ;
+      
         
         background-image: linear-gradient( transparent, #EEC0C6)   !important;
         transition: 3s    !important;
