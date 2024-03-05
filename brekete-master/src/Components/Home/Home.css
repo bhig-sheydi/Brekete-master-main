@@ -201,6 +201,7 @@
           mix-blend-mode: darken;
           width: 100px;
           position: absolute;
+          display: none;
     
   
     }
