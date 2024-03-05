@@ -248,7 +248,7 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        position: relative;
+        position: absolute;
         top: -50px;
         right: 50px;
         zindex: 70px;
