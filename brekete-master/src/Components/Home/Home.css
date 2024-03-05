@@ -201,6 +201,7 @@
           mix-blend-mode: darken;
           width: 100px;
           position: absolute;
+          display: none;
     
   
     }
@@ -247,7 +248,13 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        padding-left: -500px;
+        position: relative;
+        top: -50px;
+        right: 50px;
+        zindex: 70px;
+     
+        
+     
        
      
     
