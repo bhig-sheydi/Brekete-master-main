@@ -107,6 +107,7 @@ const Controles = () => {
             name='volBar'
             id="volBar"
             onChange={(e) => handleVolume(e.target.value / 100)}
+            className='widthV'
             
             
             />
