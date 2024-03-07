@@ -143,28 +143,27 @@ and (max-device-width : 1280px)
 
 @media only screen 
 and (min-device-width : 280px)
-and (max-device-width : 812px)
+and (max-device-width : 912px)
 {
     .navbar{
 
         display: flex   !important; 
         align-items: center    !important;
         justify-content: center;
-
         width: 100%   !important;
-      
-        
-        background-image: linear-gradient( transparent, #EEC0C6)   !important;
+        background-image: linear-gradient( transparent , #eec0c6c7 50%)   !important;
         transition: 3s    !important;
         position: fixed;
-     
+         z-index: 1000;
+         height: 100%;
+    
 
        
        
     }
     
     
- 
+
     
     
     
@@ -215,7 +214,7 @@ and (max-device-width : 812px)
     {
         text-align: center;
         text-decoration: none;
-        color: black;
+        color: red;
     }
     
     .navbar a:hover

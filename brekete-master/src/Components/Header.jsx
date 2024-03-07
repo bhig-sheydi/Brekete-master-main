@@ -8,8 +8,10 @@ const Header = () => {
 
   const { albumList, currentAlbum} = useContext(PlayerContext)
   return (
-
-      <h3 className='header-div'>{albumList[currentAlbum].Album}</h3>
+<div className='cd'>
+     
+<h3 className='header-div'>{albumList[currentAlbum].Album}</h3>
+</div>
 
   )
 }

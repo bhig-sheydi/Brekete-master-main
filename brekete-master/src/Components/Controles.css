@@ -99,17 +99,17 @@ audio{
    
    .controle-div
    {
-       background-color: pink;
+       background-color: #EEC0C6;
        width: 100%;
        height: 70px;
       position: fixed;
-      top: 90%;
+      top: 93%;
       left: 0%;
       border-radius: 10px;
       color: black;
       display: flex;
       align-items: center;
-      z-index: -1000;
+      z-index: 100;
       display: grid;
       grid-template-columns: 1fr 2fr 2fr;
       gap : 5px;

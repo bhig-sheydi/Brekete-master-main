@@ -16,9 +16,9 @@ const AlbumTimeToFly = () => {
     
    <PlayerState>
     <div>
-      {/* <Header/>
+       <Header/>
        <Actions/> 
-      <Albums></Albums>*/}
+      <Albums></Albums>
       <PlayList/> 
     
           <div>

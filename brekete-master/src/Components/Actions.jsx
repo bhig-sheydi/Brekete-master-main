@@ -22,22 +22,22 @@ const Actions = () => {
   }
   return (
     <div className={`actions-div ${selectAlbum >0 ? "change" : ""}`}>
-      <div className='album-pic'>
+       <div className='album-pic'>
                 <img src={albumList[currentAlbum].AlbumImgURL} alt="" />
       </div>
 
       <div className='album-dets'>
                  <h1>Album : </h1>   
-                 <h1>{albumList[currentAlbum].Album}</h1>
+                <h1>{albumList[currentAlbum].Album}</h1>
 
                  <div className="icons">
                 <button onClick={setFav}> <FontAwesomeIcon icon={faHeart}   className='icon' /></button>
                  <button onClick={changeAlbum}>Other Albums</button>
                 
 
-                 </div>
-      </div>
-
+                 </div> 
+  </div>
+ 
 
       
     </div>
