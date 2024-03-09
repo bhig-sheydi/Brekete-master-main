@@ -9,6 +9,7 @@ import Give from './Pages/Give'
 import About from './Pages/About'
 import Signup from './Pages/Signup'
 import AlbumTimeToFly from './Pages/AlbumTimeToFly'
+import AdminsOnly from './Pages/AdminsOnly'
 
 
 
@@ -43,6 +44,7 @@ const App = () => {
                           <Route path='/about' element={<About/>}/>
                           <Route path='/signup' element={<Signup/>}/>
                           <Route path="/AlbumTimeToFly"  element={<AlbumTimeToFly/>}/>
+                          <Route path="/Admin"  element={<AdminsOnly/>}/>
                           
                           
                         </Routes>

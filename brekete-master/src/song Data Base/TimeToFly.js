@@ -4,7 +4,7 @@ export const  TimeToFly = [
         title: "True Love",
         Artist: "Brekete Master",
         AlbumTitle : "Time To Fly",
-        FileUrl: "src\\assets\\Music\\Time To Fly\\01 Track 1.mp3"
+        FileUrl: "https://firebasestorage.googleapis.com/v0/b/breketemaster-dffb9.appspot.com/o/song%2F01%20Track%201.mp3ea36d4ca-4d02-4d09-a44d-e7562dfe33cf?alt=media&token=7c3afc4d-8d88-487a-af6c-ce8ed44dfc32"
     },
 
 {
