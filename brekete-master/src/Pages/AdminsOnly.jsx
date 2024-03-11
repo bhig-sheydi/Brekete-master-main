@@ -33,7 +33,7 @@ const AdminsOnly = () => {
       <button onClick={uploadImg} disabled={loading}>
         {loading ? 'Uploading...' : 'Add Song'}
       </button>
-      {loading && <div>Loading spinner or message...</div>}
+      {loading && <div><h1>Loading......</h1></div>}
     </div>
   );
 };
