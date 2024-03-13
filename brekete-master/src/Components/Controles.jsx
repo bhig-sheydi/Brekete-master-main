@@ -115,15 +115,8 @@ const Controles = () => {
 
         <div className="musicControles">
 
-                <div className="porogressBar">
-                <progress id="file" value={dur ? (currentTime*100)/ dur : 0} max="100" onClick={handleProgress}></progress>
-
-                <div className="time">
-                     <span className='currentT'>{fmtMSS(currentTime)}</span>/
-                     <span className='totalT'>{fmtMSS(dur)}</span>
-                </div>
-        </div> 
-            <span className='prev' onClick={prevSongs}>
+          <div className='ctl'>
+           <span className='prev' onClick={prevSongs}>
               <FontAwesomeIcon icon={faStepBackward}></FontAwesomeIcon>
             </span>
 
@@ -151,8 +144,20 @@ const Controles = () => {
             </span>
 
 
+           </div>
 
 
+
+                <div className="progressBar2">
+                <progress id="file" value={dur ? (currentTime*100)/ dur : 0} max="100" onClick={handleProgress}></progress>
+
+                <div className="time">
+                     <span className='currentT'>{fmtMSS(currentTime)}</span>/
+                     <span className='totalT'>{fmtMSS(dur)}</span>
+                </div>
+        </div> 
+        
+           
         
         </div>
 

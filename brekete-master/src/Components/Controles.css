@@ -1,204 +1,155 @@
-*{
-   padding: 0; 
+/* Global reset */
+* {
+   padding: 0;
    margin: 0;
    box-sizing: border-box;
-}
-
-
-.controle-div
-{
-    background-color: pink;
-    width: 95%;
-    height: 70px;
-   position: fixed;
-   top: 90%;
-   left: 6.5%;
+ }
+ 
+ /* Main control container */
+ .controle-div {
+   background-color: pink;
+   width: 93%;
+   height: 70px;
    border-radius: 10px;
    color: black;
    display: flex;
    align-items: center;
-   
-
+   justify-content: space-between; /* Distribute items horizontally */
+   padding: 0 20px; /* Add padding to the sides */
+   margin-left: 70px;
+ }
  
-}
-
-
-
-
-
-.controle-div .musicControles
-{
-   display: flex;
-   justify-content: center;
-   gap: 50px;
-   margin-left: 300px;
-   cursor: pointer;
-
-}
-
-
-.hide{
-   display: none;
-}
-
-progress
-{
-   width: 100%;
-   position: absolute;
-   top: -5px;
-   left: 5px;
-}
-
-
-.progressBar{
-   margin-left: 100px;
-}
-
-
-
-audio{
-   position: absolute;
-}
-
-
-.widthV{
-
-   width: 100%;
-   
-}
-
-
-.vlme
-{
+ /* Volume control */
+ .vlme {
    display: flex;
    align-items: center;
+ }
+ 
+ /* Volume icon */
+ .vlme .volum {
+   margin-right: 10px; /* Add some space between icon and slider */
+ }
+ 
+ /* Volume slider */
+ .vlme input[type='range'] {
+   width: 100px; /* Adjust the width as needed */
+ }
+ 
+ /* Music controls */
+ .musicControles {
+   display: flex;
+   align-items: center;
+ }
+ 
+ /* Control buttons */
+ .ctl span {
+   font-size: 24px; /* Increase the size of control icons */
+   margin: 0 10px; /* Add space between icons */
+   cursor: pointer;
+ }
+ 
+ /* Progress bar container */
+ .progressBar,
+ .progressBar2 {
+   flex: 1; /* Take remaining space */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    justify-content: center;
-}
-
-
-.artistName{
-
-   display: block;
-}
-
-.artistName{
-
- margin-left: 10px;
- text-align: center;
-}
-
-
-@media only screen and (min-device-width: 220px) and (max-device-width: 912px){
-
-   *{
-      padding: 0; 
-      margin: 0;
-      box-sizing: border-box;
+ }
+ 
+ /* Progress bar */
+ progress {
+   width: 150%;
+   margin-left: 100PX;
+ }
+ 
+ /* Time display */
+ .time {
+   margin-top: 5px; /* Add some space between progress bar and time */
+   font-size: 14px; /* Adjust font size */
+ }
+ 
+ /* Song meta container */
+ .songMeta {
+   text-align: center; /* Center align song meta */
+ }
+ 
+ /* Song title */
+ .songTitle {
+   font-size: 18px; /* Increase font size */
+   font-weight: bold; /* Make it bold */
+ }
+ 
+ /* Artist name */
+ .artistName {
+   font-size: 16px; /* Increase font size */
+   color: #555; /* Dim the color a bit */
+ }
+ 
+ /* Media queries for responsiveness */
+ @media only screen and (min-device-width: 220px) and (max-device-width: 912px) {
+   .controle-div {
+     background-color: #eec0c6;
+     height: 100px;
+  width: 100%;
+     font-size: 13px;
+     margin-top: 20px;
+     margin-left: 0px;
    }
-   
-   
-   .controle-div
-   {
-       background-color: #EEC0C6;
-       width: 100%;
-       height: 70px;
-      position: fixed;
-      top: 93%;
-      left: 0%;
-      border-radius: 10px;
-      color: black;
-      display: flex;
-      align-items: center;
-      z-index: 100;
-      display: grid;
-      grid-template-columns: 1fr 2fr 2fr;
-      gap : 5px;
-      text-align: center;
-      font-size: 13px;
-
-      
-   
-    
+ 
+   .currentT {
+     display: none;
    }
-
-
-   .currentT{
-      margin-left: 0px ;
-      display: none;
+ 
+   .artistName {
+     display: none;
    }
-   
-   
-   .artistName{
-
-        display: none;
+ 
+   .artistName {
+     font-size: 10px;
+     text-align: center;
    }
-
-   .artistName{
-      font-size: 10px;
-     
-      text-align: center;
+ 
+   .hide {
+     display: none;
    }
-   
-   
-   .controle-div .musicControles
-   {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-left: 0px;
-      cursor: pointer;
-      width: 100%;
-      
-   
+ 
+   progress {
+     width: 100%;
+     margin-left: 0px;
    }
-   
-   
-   .hide{
-      display: none;
+ 
+   .progressBar {
+     margin-left: 0px;
    }
-   
-   progress
-   {
-      width: 100%;
-      position: absolute;
-      top: -5px;
-      left: 5px;
+ 
+   .progressBar2 {
+     margin-left: 0px;
    }
-   
-   
-   .progressBar{
-      margin-left: 0px;
-      
+ 
+   audio {
+     position: relative;
+     background-color: blue;
    }
-   
-   
-   
-   audio{
-      position: absolute;
-    
+ 
+   .widthV {
+     width: 70px;
+     height: 5px;
    }
-
-   .widthV{
-
-      width: 70px;
-      height: 5px;
-      
+ 
+   .vlme {
+     display: flex;
+     align-items: center;
+     justify-content: center;
    }
-
-   .vlme
-   {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+ 
+   .totalT {
+     display: none;
    }
-
-
-   .totalT{
-      display: none;
+ 
+   .currentT {
+     margin-left: -60px;
    }
-
-   .currentT{
-      margin-left: -60px ;
-   }
-   
-}
+ }
+ 
