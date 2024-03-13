@@ -6,6 +6,7 @@ import { auth,  } from "../config/firebase"
 import { useAuthState } from "react-firebase-hooks/auth"
 import { signOut } from "firebase/auth"
 import {useNavigate} from "react-router-dom"
+import m from "../assets/img/m.png"
 
 
 const Navbar = () => {
@@ -29,8 +30,8 @@ const retractionState =()=>{
   return (
 
            <div  className='navbar'  style={{height : reteaction && "100px"}} >
-          <img src="\src\assets\img\M.png" alt=""   className='logo'  onClick={retractionState} />
-
+          <img src={m} alt=""   className='logo'  onClick={retractionState} />
+               
        
           
 
