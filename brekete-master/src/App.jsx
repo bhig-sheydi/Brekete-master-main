@@ -10,6 +10,8 @@ import About from './Pages/About'
 import Signup from './Pages/Signup'
 import AlbumTimeToFly from './Pages/AlbumTimeToFly'
 import AdminsOnly from './Pages/AdminsOnly'
+import TestingMyNonsense from './Components/testingMyNonsense'
+
 
 
 
@@ -45,6 +47,7 @@ const App = () => {
                           <Route path='/signup' element={<Signup/>}/>
                           <Route path="/AlbumTimeToFly"  element={<AlbumTimeToFly/>}/>
                           <Route path="/Admin"  element={<AdminsOnly/>}/>
+                          <Route path="/check"  element={<TestingMyNonsense/>}/>
                           
                           
                         </Routes>

@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Components/Actions.css/"
-import hero from '../assets/img/hero.png'
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart , faDownload, faEllipsis} from "@fortawesome/free-solid-svg-icons";

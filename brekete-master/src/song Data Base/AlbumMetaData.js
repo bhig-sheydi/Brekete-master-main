@@ -8,7 +8,7 @@ export const AlbumMetaData = [
 
     {
         Album: "Time To Fly",
-        AlbumImgURL: "src\\assets\\img\\M.png",
+        AlbumImgURL: "https://firebasestorage.googleapis.com/v0/b/brekete-4e8df.appspot.com/o/images%2FM.pngb9d1087e-645d-4971-a744-854b632ee598?alt=media&token=dbac259b-afc1-4a2f-9ef6-ad5456854197",
         AlbumCuntent: TimeToFly,
         
         
@@ -18,7 +18,7 @@ export const AlbumMetaData = [
     
     {
         Album: "Sheke Sheke",
-        AlbumImgURL: "src\\assets\\img\\hero.png",
+        AlbumImgURL: "https://firebasestorage.googleapis.com/v0/b/brekete-4e8df.appspot.com/o/images%2FM.pngb9d1087e-645d-4971-a744-854b632ee598?alt=media&token=dbac259b-afc1-4a2f-9ef6-ad5456854197",
         AlbumCuntent:  Shekesheke
         
 
@@ -27,7 +27,7 @@ export const AlbumMetaData = [
     
     {
         Album: "Original Number One Love",
-        AlbumImgURL: "src\\assets\\img\\M.png",
+        AlbumImgURL: "https://firebasestorage.googleapis.com/v0/b/brekete-4e8df.appspot.com/o/images%2FM.pngb9d1087e-645d-4971-a744-854b632ee598?alt=media&token=dbac259b-afc1-4a2f-9ef6-ad5456854197",
         AlbumCuntent: Shekesheke
 
     },
@@ -37,7 +37,7 @@ export const AlbumMetaData = [
     
     {
         Album: "Divine Visitation ",
-        AlbumImgURL: "src\\assets\\img\\hero.png",
+        AlbumImgURL: "https://firebasestorage.googleapis.com/v0/b/brekete-4e8df.appspot.com/o/images%2FM.pngb9d1087e-645d-4971-a744-854b632ee598?alt=media&token=dbac259b-afc1-4a2f-9ef6-ad5456854197",
         AlbumCuntent: TimeToFly
         
 
@@ -46,7 +46,7 @@ export const AlbumMetaData = [
 
     {
         Album: "No Problem Bigger Than God",
-        AlbumImgURL: "src\\assets\\img\\hero.png",
+        AlbumImgURL: "https://firebasestorage.googleapis.com/v0/b/brekete-4e8df.appspot.com/o/images%2FM.pngb9d1087e-645d-4971-a744-854b632ee598?alt=media&token=dbac259b-afc1-4a2f-9ef6-ad5456854197",
         AlbumCuntent: NoProblemBiggerThanGod
         
 

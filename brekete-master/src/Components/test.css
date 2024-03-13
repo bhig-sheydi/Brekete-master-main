@@ -1,0 +1,65 @@
+.general{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;  
+    padding-top: 100px;
+  
+  
+
+}
+
+
+.general2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1005;
+    gap: 20px;
+    
+
+}
+
+.mm
+{
+  padding: 100px;
+}
+
+.general3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1005;
+    gap: 20px;
+   
+    height: 500px;
+    overflow-y: scroll;
+    
+
+}
+
+
+/* Customizing scrollbar for WebKit browsers */
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 6px; /* Rounded corners */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color on hover */
+  }
+  
