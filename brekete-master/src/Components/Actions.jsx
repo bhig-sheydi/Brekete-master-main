@@ -12,9 +12,7 @@ import PlayerContext from './PlayerContext';
       
 const Actions = () => {
 
-
   const {changeAlbum, currentAlbum ,albumList, selectAlbum} = useContext(PlayerContext)
-
   const setFav = () =>{
      console.log("added to fave")
 
@@ -23,12 +21,14 @@ const Actions = () => {
   return (
     <div className={`actions-div ${selectAlbum >0 ? "change" : ""}`}>
        <div className='album-pic'>
-                <img src={albumList[currentAlbum].AlbumImgURL} alt="" />
+                <img src={albumList.length > 0 ? albumList[currentAlbum].albumImgUrl: null} alt="" />
+
+         
       </div>
 
       <div className='album-dets'>
                  <h1>Album : </h1>   
-                <h1>{albumList[currentAlbum].Album}</h1>
+                <h1>{albumList.length > 0 ? albumList[currentAlbum].album:null}</h1>
 
                  <div className="icons">
                 <button onClick={setFav}> <FontAwesomeIcon icon={faHeart}   className='icon' /></button>

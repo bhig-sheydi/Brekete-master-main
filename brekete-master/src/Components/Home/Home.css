@@ -11,6 +11,7 @@
     border-color: black !important;
     margin-top: -100px !important;
     margin-left: -100px !important;
+  
 }
 
 .hero-clip {
@@ -40,18 +41,37 @@
 }
 
 .hero-text {
-    font-size: 80px !important;
+    font-size: 60px !important;
     background-image: linear-gradient(black, rgb(172, 26, 26)) !important;
     -webkit-text-fill-color: transparent !important;
     -webkit-background-clip: text!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-button {
     width: 100px !important;
     color: black !important;
-    margin-left: 40% !important;
+     
     background-image: linear-gradient(black, rgb(172, 26, 26)) !important;
     -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+    background-color: red !important;
+    border-radius: 100px !important;
+    border-color: black !important;
+    height: 50px !important;
+}
+
+
+.hero-button:hover {
+    width: 100px !important;
+    color: black !important;
+     
+    background-image: linear-gradient(black, rgb(172, 26, 26)) !important;
+     cursor: pointer;
     -webkit-background-clip: text !important;
     background-color: red !important;
     border-radius: 100px !important;
@@ -120,17 +140,20 @@
 }
 
 .hero-text {
-    font-size: 3rem!important;
+    font-size: 60px !important;
     background-image: linear-gradient(black, rgb(172, 26, 26)) !important;
     -webkit-text-fill-color: transparent !important;
     -webkit-background-clip: text!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
 .hero-button {
     width: 100px !important;
-    color: black !important;
-    margin-left: 40% !important;
+    color: black !important;  
     background-image: linear-gradient(black, rgb(172, 26, 26)) !important;
     -webkit-text-fill-color: transparent !important;
     -webkit-background-clip: text !important;

@@ -92,7 +92,7 @@ const Controles = () => {
           onEnded={handleEnd}
           type ="audio/mpeg"
           preload='true'
-          src={albumList[currentAlbum].AlbumCuntent[currentSong].FileUrl}
+          src={albumList.length >0 ? albumList[currentAlbum].albumContent[currentSong].fileUrl: null}
           
           />
           <div className='vlme'>
@@ -115,6 +115,8 @@ const Controles = () => {
 
         <div className="musicControles">
 
+
+         
           <div className='ctl'>
            <span className='prev' onClick={prevSongs}>
               <FontAwesomeIcon icon={faStepBackward}></FontAwesomeIcon>
@@ -164,8 +166,8 @@ const Controles = () => {
 
         <div className="progressBar">
                    <div className="songMeta">
-                        <span className="songTitle">{albumList[currentAlbum].AlbumCuntent[currentSong].title}</span>
-                        <span className='artistName'>{albumList[currentAlbum].AlbumCuntent[currentSong].Artist}</span>
+                        <span className="songTitle">{albumList > 0 ? albumList[currentAlbum].albumContent[currentSong].albumTitle: null}</span>
+                        <span className='artistName'>{albumList >0 ? albumList[currentAlbum].albumContent[currentSong].artist: null}</span>
                    </div>
       
       </div>

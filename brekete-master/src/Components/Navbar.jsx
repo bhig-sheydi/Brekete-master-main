@@ -6,7 +6,9 @@ import { auth,  } from "../config/firebase"
 import { useAuthState } from "react-firebase-hooks/auth"
 import { signOut } from "firebase/auth"
 import {useNavigate} from "react-router-dom"
-
+import hero from '/src/assets/img/m.png';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import { faHome, faMusic, faGifts, faBook}  from "@fortawesome/free-solid-svg-icons";
 
 
 const Navbar = () => {
@@ -29,26 +31,92 @@ const retractionState =()=>{
 
   return (
 
-           <div  className='navbar'  style={{height : reteaction && "100px"}} >
-          <img src="https://firebasestorage.googleapis.com/v0/b/brekete-4e8df.appspot.com/o/images%2FM.pngb9d1087e-645d-4971-a744-854b632ee598?alt=media&token=dbac259b-afc1-4a2f-9ef6-ad5456854197" alt=""   className='logo'  onClick={retractionState} />
+           <div  className='navbar'  style={{height : reteaction && "100px" }} >
+          <img src={hero} alt=""   className='logo'  onClick={retractionState} />
                
        
           
 
 
-                    <ul style={{visibility  : reteaction &&  "hidden"}}>
+                    <ul style={{visibility  : reteaction &&  "hidden"}} >
                     { !user || (
                               <>
-                                              <li><Link to={"/"} >Home</Link></li>
-                                              <li><Link to={"/songs"}>Music</Link></li>
-                                              <li><Link to={"/give-away"}>Give Away</Link></li>
-                                              <li><Link to={"/about"}>About</Link></li>
+
+                    
+                                
+                              <li>
+                                
+                                <div>
+                                <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
+                                </div>
+                                <div>
+                                  <Link to={"/"} >Home</Link>
+                                </div>
+                                
+                                
+                                </li>
+                      
+
+                     
+                              <li>
+
+                                <div>
+                                          <FontAwesomeIcon icon={faMusic}></FontAwesomeIcon>
+                                </div>
+                                <div>
+
+                                  <Link to={"/songs"}>Music</Link>
+                                </div>
+                                
+                                
+                                
+                                
+                                </li>
+                          
+
+                    
+                              <li>
+
+
+                                <div>
+                                  <FontAwesomeIcon icon={faGifts}></FontAwesomeIcon>
+                                </div>
+                                <div>
+
+                                  <Link to={"/give-away"}>Give Away</Link>
+                                </div>
+                                
+                                
+                                
+                                
+                                </li>
+                              
+                              <div> <li>
+                                <div>
+                                    <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
+                                </div>
+                                <div>
+                                 <Link to={"/about"}>About</Link>
+                                </div>
+</li>
+
+                                </div>
+                              
+                          
+                                           
+                                              
+                                            
+                                              
                                                                         
 
                                                        <div  className='logout-div'>
-                                                          <p>{user?.displayName}</p>
-                                                          <img  className='profile' src={user?.photoURL|| ""}  />
-                                                          <button onClick={signUserOut} >Log out</button>
+                                                        
+                                                          <div className='logout-div'>
+                                                            <p>{user?.displayName}</p>
+                                                          {/* <img  className='profile' src={user?.photoURL|| ""}  /> */}
+                                                          <Link to={"/profile"}>Profile</Link>
+                                                          </div>
+                                                          <a onClick={signUserOut} >Log out</a>
                                                         </div> 
 
                                               </>

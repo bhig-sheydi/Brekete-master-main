@@ -13,12 +13,26 @@ body{
 }
 
 
-.App
-{
-  
- 
 
-   
+span 
+{
+    color: red;
+    cursor: pointer;
+}
+
+.fancy
+{
+    width: 100%;
+    mix-blend-mode: darken;
+
+}
+
+.forms
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .Signup
@@ -39,6 +53,7 @@ body{
    align-items: center;
    justify-content: center;
 
+
 }
 
 
@@ -51,13 +66,40 @@ body{
     border-radius: 100px;
     margin-top: 20px;
     margin-left: 100px;
+    text-align: center;
 }
+
+.forms 
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+  
+}
+.forms .im
+{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 10px;
+}
+
+
+
 
 
 form
 {
-    display: grid;
-    gap: 15px;
+    display: flex;
+     row-gap: 15px;
+    flex-direction: column;
+
+   
+
+    
 
     
 
@@ -73,55 +115,99 @@ form input
 @media only screen and (min-device-width: 220px) and (max-device-width: 912px){
 
 
+
+    .fancy
+    {
+        width: 100%;
+        mix-blend-mode: darken;
     
-.Signup
-{
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-   width: 100%;
-   height: 100vh;
-}
-
-
-.Signup div
-{
-   border: #EEC0C6 1px;
-   width: 30%;
-   align-items: center;
-   justify-content: center;
-
-}
-
-
-
-.Signup button
-{
-    background-image: linear-gradient(#7EE8FA, #EEC0C6);
-    height:  30px;
-    width: 15rem;
-    border-radius: 100px;
-    margin-top: 20px;
-    margin-left: -40px;
-}
-
-
-form
-{
-    display: grid;
-    gap: 15px;
-
+    }
     
-
-}
-
-
-form input
-{
-    padding: 5px;
-    margin-top: 10px;
-}
-
+    .forms
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     
-}
+    .Signup
+    {
+        display: flex;
+    
+        justify-content: center;
+        align-items: center;
+       width: 100%;
+       height: 100vh;
+    }
+    
+    
+    .Signup div
+    {
+       border: #EEC0C6 1px;
+       width: 30%;
+       align-items: center;
+       justify-content: center;
+     
+       width: 100%;
+       margin: 10px;
+       height: 70vh;
+    
+    }
+    
+    
+    
+    .Signup button
+    {
+        background-image: linear-gradient(#7EE8FA, #EEC0C6);
+        height:  30px;
+        width: 15rem;
+        border-radius: 100px;
+        margin-top: 20px;
+        margin-left: 100px;
+        text-align: center;
+    }
+    
+    .forms 
+    {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+      
+    }
+    .forms .im
+    {
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    
+    
+    form
+    {
+        display: flex;
+         row-gap: 15px;
+        flex-direction: column;
+    
+       
+    
+        
+    
+        
+    
+    }
+    
+    
+    form input
+    {
+        padding: 5px;
+        margin-top: 10px;
+    }
+}    

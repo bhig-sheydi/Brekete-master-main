@@ -1,19 +1,55 @@
-import {useReducer, useState} from "react"
+import {useReducer, useState, useEffect} from "react"
 import PlayerReducer   from "./PlayerReducer.jsx"
 import PlayerContext from "./PlayerContext.jsx"
 import { TimeToFly } from "../song Data Base/TimeToFly.js"
 import { AlbumMetaData } from "../song Data Base/AlbumMetaData.js"
-
-
+import { getDocs , collection} from "firebase/firestore"
+import { db } from "../config/firebase.js"
 import React from 'react'
 
 
 
 
+
 const PlayerState = (props) => {
+ const [ally, setAlly] = useState([])
+
+
+ const [currentUserName,  setCurrentUserName ]  = useState("John Doe")
+const musicCollection = collection(db, "AlbumMetaData")
+useEffect(()=>{
+
+
+     
+    const getMusic  = async ()=>{
+
+        try {
+            const data = await getDocs(musicCollection)
+          
+            const filterdData = data.docs.map((doc)=> ({...doc.data(), id: doc.id}))
+            setAlly(filterdData)
+        } catch (error) {
+            console.error(error)
+        }
+
+          
+    }
+
+
+    getMusic()
+
+
+}, [])
+
+
+
+
+console.log("stuff" , ally > 0 ? ally[0].album: null)
+ 
+ 
     const  initialState = {
         currentSong : 0,
-        songList : TimeToFly,
+        songList : ally,
         repeat: false,
         random:  false,
         audio: null,
@@ -97,7 +133,7 @@ const PlayerState = (props) => {
                         random:  state.random,
                         audio: state.audio,
                         currentAlbum : state.currentAlbum,
-                        albumList: AlbumMetaData,
+                        albumList: ally,
                         setCurrent,
                         songSet,
                         prevSongs,
@@ -109,8 +145,9 @@ const PlayerState = (props) => {
                         CurrentAlbum,
                         changeAlbum,
                         selectAlbum,
-                        showAlbum
-                     
+                        showAlbum,
+                        currentUserName,
+                         setCurrentUserName ,
                         
                         
                     }}>

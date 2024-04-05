@@ -1,9 +1,13 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth, GoogleAuthProvider, EmailAuthProvider } from "firebase/auth"
+import { getAuth, GoogleAuthProvider, EmailAuthProvider, onAuthStateChanged } from "firebase/auth"
 import {getStorage} from "firebase/storage"
 import {getFirestore} from "firebase/firestore"
+import { useEffect, useState } from "react";
+import { ref , uploadBytes, getDownloadURL} from "firebase/storage";
+import { updateProfile } from 'firebase/auth';
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -27,6 +31,49 @@ export const eProvder = new EmailAuthProvider
 export const provider = new GoogleAuthProvider()
 export const storage = getStorage(app)
 export const db = getFirestore(app)
+
+export function useAuth() {
+     const [currentUser, setCurrentUser] = useState()
+
+
+     useEffect(()=>{
+
+         const unsub = onAuthStateChanged(auth, user => (setCurrentUser(user)))
+
+         return unsub
+     }, [])
+
+
+
+     return currentUser
+
+}
+
+
+export async function  upload(files, currentUser, setLoading)
+{
+  
+  const fileRef = ref(storage, currentUser.uid + ".png")
+  setLoading(true)
+ const snapshot = await uploadBytes(fileRef,files)
+  setLoading(false)
+  alert("file uploaded")
+
+  const photoURL   =   await getDownloadURL(fileRef)
+  updateProfile(currentUser,{photoURL:photoURL })
+
+
+   
+}
+
+
+
+export async function userName(userNames,currentUser)
+{
+    const something = await updateProfile(currentUser,{displayName:userName})  
+
+       console.log("smile" + something)
+}
 // Initialize Firebase
 
 

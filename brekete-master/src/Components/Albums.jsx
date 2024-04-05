@@ -52,7 +52,7 @@ const [selectedAlbum, setSelectedAlbum] = useState()
           
         }} 
       >
-        <img src={album.AlbumImgURL} alt={album.AlbumImgURL} />
+        <img src={album.albumImgUrl} alt={album.albumImgUrl} />
         <h1>{album.Album}</h1>
       </SwiperSlide>
     ))}

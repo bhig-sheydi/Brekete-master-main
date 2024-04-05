@@ -10,7 +10,10 @@ const Header = () => {
   return (
 <div className='cd'>
      
-<h3 className='header-div'>{albumList[currentAlbum].Album}</h3>
+<h3 className='header-div'>{albumList.length>0 ? albumList[currentAlbum].album : null}</h3>
+
+
+
 </div>
 
   )
