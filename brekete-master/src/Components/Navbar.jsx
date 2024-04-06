@@ -31,7 +31,7 @@ const retractionState =()=>{
   return (
 
            <div  className='navbar'  style={{height : reteaction && "100px" }} >
-          <img src="/src/assets/img/m.png" alt=""   className='logo'  onClick={retractionState} />
+          <img src="" alt=""   className='logo'  onClick={retractionState} />
                
        
           
