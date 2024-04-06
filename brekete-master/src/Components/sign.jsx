@@ -3,7 +3,6 @@ import { auth, provider, db } from "../config/firebase"; // Assuming you have fi
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { updateDoc, doc } from "firebase/firestore";
 import image_processing20191101 from '/src/assets/img/running with head phones.gif';
-import hero from '/src/assets/img/m.png';
 import { useAuth } from '../config/firebase';
 import { useContext } from 'react';
 import { PlayerContext2 } from '../Components/playerContext2';
@@ -95,7 +94,7 @@ const Sign = () => {
   return (
     <div className='Signup'>
       <div className='forms'>
-        <img src={hero} alt="" className='im' />
+        <img src='/src/assets/img/m.png' alt="" className='im' />
         {loading || !showForm ? (
           <img src={image_processing20191101} alt="" className='fancy' />
         ) : (

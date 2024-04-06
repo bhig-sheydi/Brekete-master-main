@@ -4,7 +4,6 @@ import { signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPass
 import { useNavigate } from 'react-router-dom';
 import "../index.css";
 import image_processing20191101 from '/src/assets/img/running with head phones.gif';
-import hero from '/src/assets/img/m.png';
 
 
 const LogIn = () => {
@@ -54,7 +53,7 @@ const LogIn = () => {
     <div className='Signup'>
       
       <div className='forms'>
-   <img src={hero} alt=""  className='im'/>
+   <img src='/src/assets/img/m.png' alt=""  className='im'/>
         {loading || !showForm ? ( // Display the GIF if loading or the form is not yet shown
           <img src={image_processing20191101} alt="" className='fancy' />
         ) : (
