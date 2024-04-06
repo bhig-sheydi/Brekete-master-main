@@ -20,7 +20,7 @@ const Sign = () => {
   const currentUser = useAuth();
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
-  
+      
   const handleChange = (e) => {
     setUsername(e.target.value);
   };
