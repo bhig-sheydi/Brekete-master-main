@@ -6,6 +6,7 @@ import { auth,  } from "../config/firebase"
 import { useAuthState } from "react-firebase-hooks/auth"
 import { signOut } from "firebase/auth"
 import {useNavigate} from "react-router-dom"
+import hero from '/src/assets/img/m.png';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faHome, faMusic, faGifts, faBook}  from "@fortawesome/free-solid-svg-icons";
 
@@ -31,7 +32,7 @@ const retractionState =()=>{
   return (
 
            <div  className='navbar'  style={{height : reteaction && "100px" }} >
-          <img src="" alt=""   className='logo'  onClick={retractionState} />
+          <img src={hero} alt=""   className='logo'  onClick={retractionState} />
                
        
           
