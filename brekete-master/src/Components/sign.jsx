@@ -94,7 +94,7 @@ const Sign = () => {
   return (
     <div className='Signup'>
       <div className='forms'>
-        <img src='/src/assets/img/m.png' alt="" className='im' />
+        <img src='' alt="" className='im' />
         {loading || !showForm ? (
           <img src={image_processing20191101} alt="" className='fancy' />
         ) : (

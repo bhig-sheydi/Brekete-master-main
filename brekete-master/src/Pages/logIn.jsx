@@ -53,7 +53,7 @@ const LogIn = () => {
     <div className='Signup'>
       
       <div className='forms'>
-   <img src='/src/assets/img/m.png' alt=""  className='im'/>
+   <img src='' alt=""  className='im'/>
         {loading || !showForm ? ( // Display the GIF if loading or the form is not yet shown
           <img src={image_processing20191101} alt="" className='fancy' />
         ) : (
